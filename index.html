@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gigi's Empire | Acessórios</title>
+
+<style>
+:root{
+    --rosa:#c97891;
+    --rosa-escuro:#a95770;
+    --rosa-claro:#f8e7eb;
+    --creme:#fffaf8;
+    --texto:#684b55;
+    --dourado:#cdbb86;
+    --branco:#ffffff;
+
+    /* LOGO DA GIGI'S EMPIRE - INCORPORADA NO HTML */
+    --logo:url("data:image/webp;base64,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")
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--creme);
+    color:var(--texto);
+    font-family:Georgia,"Times New Roman",serif;
+}
+
+/* CABEÇALHO */
+header{
+    height:92px;
+    background:#fffafa;
+    border-bottom:1px solid #f2d9df;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1100px;
+    height:100%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.logo-topo{
+    background-image:var(--logo);
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    height:82px;
+    width:110px;
+}
+
+nav{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:45px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#70545e;
+    font-size:14px;
+}
+
+nav .esquerda,
+nav .direita{
+    display:flex;
+    gap:45px;
+}
+
+nav .esquerda{
+    margin-right:170px;
+}
+
+nav .direita{
+    margin-left:170px;
+}
+
+nav a:hover{
+    color:var(--rosa);
+}
+
+nav a.inicio{
+    position:relative;
+}
+
+nav a.inicio:after{
+    content:"";
+    position:absolute;
+    height:2px;
+    width:35px;
+    left:50%;
+    bottom:-10px;
+    transform:translateX(-50%);
+    background:var(--rosa);
+}
+
+.social-top{
+    position:absolute;
+    right:20px;
+    display:flex;
+    gap:15px;
+}
+
+.social-top a{
+    color:var(--rosa);
+    font:22px Arial;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    min-height:390px;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(120deg,#fae9ed,#fceff1 55%,#f4d7de);
+}
+
+.hero:after{
+    content:"";
+    position:absolute;
+    right:-120px;
+    bottom:-170px;
+    width:500px;
+    height:330px;
+    border-radius:50%;
+    border:2px solid rgba(201,120,145,.4);
+    transform:rotate(-20deg);
+}
+
+.hero-conteudo{
+    max-width:1100px;
+    margin:auto;
+    min-height:390px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    z-index:2;
+}
+
+.hero-texto{
+    margin-left:80px;
+    max-width:480px;
+}
+
+.pequeno{
+    color:var(--rosa);
+    letter-spacing:5px;
+    font-size:11px;
+    margin-bottom:8px;
+}
+
+.hero h1{
+    color:var(--rosa-escuro);
+    font-size:43px;
+    font-weight:normal;
+    margin-bottom:2px;
+}
+
+.subtitulo{
+    color:var(--rosa);
+    letter-spacing:4px;
+    font-size:16px;
+    margin-bottom:13px;
+}
+
+.hero p{
+    font-size:15px;
+    line-height:1.55;
+    max-width:440px;
+}
+
+.botao{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    margin-top:14px;
+    padding:10px 24px;
+    border-radius:25px;
+    background:var(--rosa);
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.botao:hover{
+    background:var(--rosa-escuro);
+}
+
+.botao span{
+    font-size:20px;
+}
+
+.logo-hero{
+    background-image:var(--logo);
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:absolute;
+    right:250px;
+    top:25px;
+    width:170px;
+    opacity:.72;
+}
+
+/* COLEÇÃO */
+.colecao{
+    background:#fffdfa;
+    padding:55px 20px 60px;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.titulo .mini{
+    color:var(--dourado);
+    font-size:11px;
+    letter-spacing:5px;
+}
+
+.titulo h2{
+    color:var(--rosa-escuro);
+    font-size:32px;
+    font-weight:normal;
+    margin:6px 0;
+}
+
+.titulo p{
+    font-size:14px;
+}
+
+.coracao-linha{
+    color:var(--rosa);
+    margin-top:8px;
+    letter-spacing:6px;
+}
+
+.produtos{
+    max-width:1060px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.produto{
+    border:1px solid #efc4cd;
+    border-radius:10px;
+    overflow:hidden;
+    background:#fff8f9;
+}
+
+.foto{
+    height:250px;
+    background:linear-gradient(145deg,#f7dfe4,#fcecef);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    color:var(--rosa);
+}
+
+.foto .icone{
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.foto span{
+    font-size:11px;
+}
+
+.produto-legenda{
+    min-height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--rosa-escuro);
+    font-size:13px;
+    padding:10px;
+}
+
+/* SOBRE */
+.sobre{
+    background:#fae9ed;
+    padding:55px 20px;
+}
+
+.sobre-container{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.sobre-texto .mini{
+    color:var(--rosa);
+    letter-spacing:4px;
+    font-size:11px;
+}
+
+.sobre-texto h2{
+    color:#87515f;
+    font-size:30px;
+    font-weight:normal;
+    margin:7px 0;
+}
+
+.sobre-texto p{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:10px;
+}
+
+.destaques{
+    display:flex;
+    gap:22px;
+    margin-top:18px;
+    flex-wrap:wrap;
+}
+
+.destaque{
+    text-align:center;
+    color:#87515f;
+    font-size:12px;
+}
+
+.destaque .icone{
+    width:43px;
+    height:43px;
+    margin:auto auto 6px;
+    border-radius:50%;
+    background:#f6d8df;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+}
+
+.logo-sobre{
+    height:270px;
+    border-radius:50%;
+    background:radial-gradient(
+        ellipse,
+        rgba(255,255,255,.9),
+        rgba(247,213,220,.55)
+    );
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo-sobre-img{
+    width:230px;
+    height:230px;
+    background-image:var(--logo);
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* CONTATO */
+.contato{
+    background:#fffdfa;
+    padding:55px 20px 60px;
+}
+
+.contato-cards{
+    max-width:850px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.contato-card{
+    border:1px solid #edc6ce;
+    border-radius:10px;
+    padding:15px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#87515f;
+    background:#fffafa;
+}
+
+.contato-card .icone{
+    font-size:25px;
+    color:var(--rosa);
+}
+
+.contato-card strong{
+    display:block;
+    font-size:13px;
+    margin-bottom:3px;
+}
+
+.contato-card span{
+    font-family:Arial,sans-serif;
+    font-size:11px;
+    color:#816d74;
+}
+
+/* RODAPÉ */
+footer{
+    min-height:80px;
+    background:linear-gradient(100deg,#b96882,#c97b91);
+    color:white;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:12px;
+}
+
+footer h3{
+    font-size:16px;
+    font-weight:normal;
+}
+
+footer .linha{
+    width:45px;
+    height:1px;
+    background:white;
+    margin:5px;
+}
+
+footer p{
+    font-size:10px;
+}
+
+/* BOTÃO VOLTAR AO TOPO */
+.topo{
+    position:fixed;
+    right:20px;
+    bottom:18px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:1px solid white;
+    background:#b96882;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    z-index:999;
+}
+
+/* CELULAR */
+@media(max-width:800px){
+
+    header{
+        height:70px;
+    }
+
+    .logo-topo{
+        height:65px;
+        width:90px;
+    }
+
+    nav .esquerda,
+    nav .direita{
+        display:none;
+    }
+
+    .hero{
+        min-height:560px;
+    }
+
+    .hero-conteudo{
+        min-height:560px;
+        justify-content:center;
+    }
+
+    .hero-texto{
+        margin:0;
+        padding:30px 25px;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:37px;
+    }
+
+    .hero p{
+        margin:auto;
+    }
+
+    .logo-hero{
+        opacity:.16;
+        right:50%;
+        transform:translateX(50%);
+        width:220px;
+        top:90px;
+        z-index:0;
+    }
+
+    .produtos{
+        grid-template-columns:repeat(2,1fr);
+        max-width:550px;
+    }
+
+    .sobre-container{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .sobre-texto{
+        text-align:center;
+    }
+
+    .destaques{
+        justify-content:center;
+    }
+
+    .contato-cards{
+        grid-template-columns:1fr;
+        max-width:400px;
+    }
+}
+
+@media(max-width:430px){
+
+    .produtos{
+        grid-template-columns:1fr;
+        max-width:360px;
+    }
+
+    .foto{
+        height:230px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero-texto{
+        padding:25px 15px;
+    }
+}
+</style>
+</head>
+
+<body id="inicio">
+
+<header>
+    <div class="navbar">
+
+        <nav>
+
+            <div class="esquerda">
+                <a class="inicio" href="#inicio">Início</a>
+                <a href="#braceletes">Braceletes</a>
+            </div>
+
+            <div
+                class="logo-topo"
+                role="img"
+                aria-label="Gigi's Empire Acessórios">
+            </div>
+
+            <div class="direita">
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </div>
+
+        </nav>
+
+        <div class="social-top">
+            <a href="https://instagram.com/gigis_empire"
+               target="_blank"
+               aria-label="Instagram">◎</a>
+
+            <a href="https://wa.me/559981837760"
+               target="_blank"
+               aria-label="WhatsApp">◉</a>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- INÍCIO -->
+
+<section class="hero">
+
+    <div class="hero-conteudo">
+
+        <div class="hero-texto">
+
+            <div class="pequeno">
+                BEM-VINDA À
+            </div>
+
+            <h1>
+                Gigi's Empire
+            </h1>
+
+            <div class="subtitulo">
+                ACESSÓRIOS ARTESANAIS
+            </div>
+
+            <p>
+                Braceletes artesanais feitos à mão,
+                com carinho, criatividade e personalidade.
+            </p>
+
+            <a href="#braceletes" class="botao">
+                Ver braceletes
+                <span>♡</span>
+            </a>
+
+        </div>
+
+        <div
+            class="logo-hero"
+            aria-hidden="true">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BRACELETES -->
+
+<section class="colecao" id="braceletes">
+
+    <div class="titulo">
+
+        <div class="mini">
+            COLEÇÃO
+        </div>
+
+        <h2>
+            Nossos braceletes
+        </h2>
+
+        <p>
+            Conheça nossas peças artesanais.
+            Novos produtos serão adicionados conforme forem confeccionados.
+        </p>
+
+        <div class="coracao-linha">
+            ♡　♡　♡
+        </div>
+
+    </div>
+
+
+    <div class="produtos">
+
+        <!-- PRODUTO 1 -->
+        <article class="produto">
+
+            <div class="foto">
+                <div class="icone">♡</div>
+                <span>Foto do produto</span>
+            </div>
+
+            <div class="produto-legenda">
+                Em breve ♡
+            </div>
+
+        </article>
+
+
+        <!-- PRODUTO 2 -->
+        <article class="produto">
+
+            <div class="foto">
+                <div class="icone">♡</div>
+                <span>Foto do produto</span>
+            </div>
+
+            <div class="produto-legenda">
+                Em breve ♡
+            </div>
+
+        </article>
+
+
+        <!-- PRODUTO 3 -->
+        <article class="produto">
+
+            <div class="foto">
+                <div class="icone">♡</div>
+                <span>Foto do produto</span>
+            </div>
+
+            <div class="produto-legenda">
+                Em breve ♡
+            </div>
+
+        </article>
+
+
+        <!-- PRODUTO 4 -->
+        <article class="produto">
+
+            <div class="foto">
+                <div class="icone">♡</div>
+                <span>Foto do produto</span>
+            </div>
+
+            <div class="produto-legenda">
+                Em breve ♡
+            </div>
+
+        </article>
+
+
+        <!-- PRODUTO 5 -->
+        <article class="produto">
+
+            <div class="foto">
+                <div class="icone">♡</div>
+                <span>Foto do produto</span>
+            </div>
+
+            <div class="produto-legenda">
+                Em breve ♡
+            </div>
+
+        </article>
+
+
+        <!-- PRODUTO 6 -->
+        <article class="produto">
+
+            <div class="foto">
+                <div class="icone">♡</div>
+                <span>Foto do produto</span>
+            </div>
+
+            <div class="produto-legenda">
+                Em breve ♡
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- SOBRE -->
+
+<section class="sobre" id="sobre">
+
+    <div class="sobre-container">
+
+        <div class="sobre-texto">
+
+            <div class="mini">
+                SOBRE A GIGI'S EMPIRE
+            </div>
+
+            <h2>
+                Feito à mão, feito com carinho.
+            </h2>
+
+            <p>
+                A Gigi's Empire nasceu para transformar
+                pequenos detalhes em acessórios cheios
+                de personalidade.
+            </p>
+
+            <p>
+                Cada bracelete é produzido artesanalmente,
+                com atenção aos detalhes e muito carinho.
+            </p>
+
+            <div class="destaques">
+
+                <div class="destaque">
+                    <div class="icone">♡</div>
+                    Artesanal
+                </div>
+
+                <div class="destaque">
+                    <div class="icone">✦</div>
+                    Peças únicas
+                </div>
+
+                <div class="destaque">
+                    <div class="icone">✿</div>
+                    Feito com carinho
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="logo-sobre">
+
+            <div
+                class="logo-sobre-img"
+                role="img"
+                aria-label="Gigi's Empire Acessórios">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTATO -->
+
+<section class="contato" id="contato">
+
+    <div class="titulo">
+
+        <div class="mini">
+            FALE CONOSCO
+        </div>
+
+        <h2>
+            Entre em contato
+        </h2>
+
+        <p>
+            Gostou de algum bracelete?
+            Fale com a gente!
+        </p>
+
+    </div>
+
+
+    <div class="contato-cards">
+
+        <a
+            class="contato-card"
+            href="tel:+559981837760">
+
+            <div class="icone">
+                ☎
+            </div>
+
+            <div>
+                <strong>
+                    Telefone
+                </strong>
+
+                <span>
+                    98 98183-7760
+                </span>
+            </div>
+
+        </a>
+
+
+        <a
+            class="contato-card"
+            href="https://instagram.com/gigis_empire"
+            target="_blank">
+
+            <div class="icone">
+                ◎
+            </div>
+
+            <div>
+                <strong>
+                    Instagram
+                </strong>
+
+                <span>
+                    @gigis_empire
+                </span>
+            </div>
+
+        </a>
+
+
+        <a
+            class="contato-card"
+            href="https://wa.me/559981837760"
+            target="_blank">
+
+            <div class="icone">
+                ◉
+            </div>
+
+            <div>
+                <strong>
+                    WhatsApp
+                </strong>
+
+                <span>
+                    Fale conosco por mensagem
+                </span>
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- RODAPÉ -->
+
+<footer>
+
+    <h3>
+        Gigi's Empire
+    </h3>
+
+    <div class="linha"></div>
+
+    <p>
+        Acessórios artesanais feitos com carinho ♡
+    </p>
+
+    <p>
+        © 2026 Gigi's Empire
+    </p>
+
+</footer>
+
+
+<a
+    class="topo"
+    href="#inicio">
+    ↑
+</a>
+
+</body>
+</html>
